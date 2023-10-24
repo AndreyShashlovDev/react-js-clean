@@ -6,8 +6,8 @@ import { CounterPagePresenter } from './CounterPagePresenter'
 export const CounterPageView = () => {
 
   const [presenter] = useState<CounterPagePresenter>(() => getDIValue(CounterPagePresenter))
-  const [counter, setCounter] = useState<number>()
-  const [isLoading, setIsLoading] = useState<boolean>()
+  const [counter, setCounter] = useState<number>(0)
+  const [isLoading, setIsLoading] = useState<boolean>(true)
 
   useEffect(() => {
     presenter.setView({
