@@ -1,4 +1,4 @@
-# ReactJs Clean architecture + MVP example
+# ReactJs Clean architecture + VIPER example
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
