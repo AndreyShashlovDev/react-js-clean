@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { lazy, Suspense } from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import './App.css'
 import { BasicRouter } from './common/router/BasicRouter'
-import { CounterPageView } from './features/counter-feature/presenter/CounterPageView'
 import { MainPageView } from './features/main-feature/presenters/MainPageView'
+
+const CounterPageView = lazy(() => import('./features/counter-feature/presenter/CounterPageView'))
 
 const router = createBrowserRouter([
   {
@@ -13,7 +14,10 @@ const router = createBrowserRouter([
   },
   {
     path: 'counters',
-    element: <CounterPageView />,
+    element: (
+      <Suspense fallback={<>Lazy loading page fallback</>}>
+        <CounterPageView />
+      </Suspense>),
   },
 ])
 

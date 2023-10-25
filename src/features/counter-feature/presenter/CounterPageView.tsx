@@ -37,3 +37,5 @@ export const CounterPageView = () => {
 
   </div>
 }
+
+export default CounterPageView
