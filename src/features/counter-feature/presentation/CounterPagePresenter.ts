@@ -18,6 +18,7 @@ export class CounterPagePresenter implements Presenter<CounterPageViewInterface>
 
   public setView(view: CounterPageViewInterface): void {
     this.view = view
+    this.view.setTitle('Counters page')
   }
 
   public fetchCounter(): void {

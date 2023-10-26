@@ -3,9 +3,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import './App.css'
 import { BasicRouter } from './common/router/BasicRouter'
-import { MainPageView } from './features/main-feature/presenters/MainPageView'
+import { MainPageView } from './features/main-feature/presentation/MainPageView'
 
-const CounterPageView = lazy(() => import('./features/counter-feature/presenter/CounterPageView'))
+const CounterPageView = lazy(() => import('./features/counter-feature/presentation/CounterPageView'))
 
 const router = createBrowserRouter([
   {

@@ -12,6 +12,7 @@ export class MainPagePresenter implements Presenter<MainPageViewInterface> {
 
   public setView(view: MainPageViewInterface): void {
     this.view = view
+    this.view.setTitle('ReactJs Clean architecture + MVP')
   }
 
   public openCounterPage(): void {

@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
-import './Injection'
 import './index.css'
+import './Injection'
 import reportWebVitals from './reportWebVitals'
 
 const root = ReactDOM.createRoot(
