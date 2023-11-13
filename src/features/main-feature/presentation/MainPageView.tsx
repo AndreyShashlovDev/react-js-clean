@@ -21,6 +21,11 @@ export const MainPageView = () => {
 
   return <div>
     <AppHeaderView title={title} />
-    <button onClick={() => presenter.openCounterPage()}>Show Counter page</button>
+    <div>
+      <button onClick={() => presenter.openCounterPage()}>Counter page</button>
+    </div>
+    <div>
+      <button onClick={() => presenter.openPhonebookPage()}>Phonebook page</button>
+    </div>
   </div>
 }

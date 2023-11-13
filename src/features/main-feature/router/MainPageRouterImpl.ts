@@ -6,4 +6,8 @@ export class MainPageRouterImpl extends MainPageRouter {
   public openCounterPage(): void {
     BasicRouter.router.navigate('/counters')
   }
+
+  public openPhonebookPage(): void {
+    BasicRouter.router.navigate('/phonebook')
+  }
 }

@@ -37,7 +37,7 @@ export const CounterPageView = () => {
             <button onClick={() => presenter.decreaseCounter()}>decrease</button>
             <button onClick={() => presenter.increaseCounter()}>increase</button>
             <div />
-            <button onClick={() => presenter.moveToMain()}>back</button>
+            <button onClick={() => presenter.moveToMain()}>To main page</button>
           </>
         )
     }

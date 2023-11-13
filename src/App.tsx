@@ -6,6 +6,7 @@ import { BasicRouter } from './common/router/BasicRouter'
 import { MainPageView } from './features/main-feature/presentation/MainPageView'
 
 const CounterPageView = lazy(() => import('./features/counter-feature/presentation/CounterPageView'))
+const PhonebookPageView = lazy(() => import('./features/phonebook-feature/presentation/PhonebookPageView'))
 
 const router = createBrowserRouter([
   {
@@ -17,7 +18,16 @@ const router = createBrowserRouter([
     element: (
       <Suspense fallback={<>Lazy loading page fallback</>}>
         <CounterPageView />
-      </Suspense>),
+      </Suspense>
+    ),
+  },
+  {
+    path: 'phonebook',
+    element: (
+      <Suspense fallback={<>Lazy loading page fallback</>}>
+        <PhonebookPageView />
+      </Suspense>
+    ),
   },
 ])
 

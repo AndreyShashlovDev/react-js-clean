@@ -18,4 +18,8 @@ export class MainPagePresenter implements Presenter<MainPageViewInterface> {
   public openCounterPage(): void {
     this.router.openCounterPage()
   }
+
+  public openPhonebookPage() {
+    this.router.openPhonebookPage()
+  }
 }
